@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
   --main-cyan: rgb(213, 249, 249);
   --main-blue: rgb(67, 94, 254);
   --main-move: rgb(90, 27, 192);
@@ -7,3 +8,13 @@
   --main-gray: rgb(181, 178, 178);
   --main-light-gray: rgb(239, 239, 239);
 }
+=======
+  --main-cyan: rgba(213, 249, 249, 1);
+  --main-blue: rgba(67, 94, 254, 1);
+  --main-move: rgba(90, 27, 192, 1);
+  --main-black: rgba(17, 1, 1, 1);
+  --main-white: rgba(255, 254, 254, 1);
+  --main-gray: rgba(181, 178, 178, 1);
+  --main-light-gray: rgba(239, 239, 239, 1);
+}
+>>>>>>> 2fc5ffa9612584fccdf8ef3ef5dd0296e73fe2de
