@@ -23,6 +23,14 @@ li {
     list-style: none;
 }
 
+#titre {
+    font-size: 7rem;
+}
+
+/* #header_bottom_produit {
+    background-color: (--main-gray);
+} */
+
 #respirer {
     background-image: url(../images/KV-O2connect-fd-sombre.jpg);
     background-size: cover;
