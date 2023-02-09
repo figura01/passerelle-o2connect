@@ -25,16 +25,31 @@ li {
 
 #respirer {
     background-image: url(../images/KV-O2connect-fd-sombre.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-#respirer p {}
+#respirer .bg_text_white,
+#header_bottom .bg_text_white {
+    background: rgba(255, 254, 254, .8);
+    background-size: cover;
+}
 
 #detecter {
     background-image: url(../images/KV-O2connect-fd-vert.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#header_bottom {
+    background-image: url(../images/KV-O2connect-fd-clair.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#detecter .bg_text_white {
+    background: rgba(255, 254, 254, .8);
+    background-size: cover;
 }
 
 footer a p {
