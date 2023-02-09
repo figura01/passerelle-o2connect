@@ -1,6 +1,9 @@
 :root {
-  --main-light-gray: rgba(213, 249, 249, 1);
+  --main-cyan: rgba(213, 249, 249, 1);
   --main-blue: rgba(67, 94, 254, 1);
   --main-move: rgba(90, 27, 192, 1);
-  --main-black: rgba(0, 5, 38, 1);
+  --main-black: rgba(17, 1, 1, 1);
+  --main-white: rgba(255, 254, 254, 1);
+  --main-gray: rgba(181, 178, 178, 1);
+  --main-light-gray: rgba(239, 239, 239, 1);
 }
