@@ -1,0 +1,46 @@
+.navbar {
+  height: 6.25rem;
+  background-color: var(--main-white);
+}
+
+.navbar a.nav-link:hover {
+  color: var(--main-blue)!important;
+}
+
+.navbar a:hover svg {
+  fill: var(--main-blue);
+}
+
+.navbar-expand-lg .navbar.nav .bar-nav .nav-link {
+  padding: 0 3.125rem !important;
+}
+
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    display:flex;
+    padding: 0 1.125rem !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:first-child {
+    padding: 0 1.125rem 0 0rem !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:last-child {
+    padding: 0  0 0 1.125rem !important;
+  }
+}
+
+
+
+@media (min-width: 1400px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    display:flex;
+    padding: 0 3.125rem !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:first-child {
+    padding: 0 3.125rem 0 0rem !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:last-child {
+    padding: 0  0 0 3.125rem !important;
+  }
+}

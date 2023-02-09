@@ -1,0 +1,27 @@
+button {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+  background-color: rgba(158, 158, 163, 1);
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  height: 30px;
+  font-size: 12px;
+  padding: .5rem 1rem !important;
+  box-sizing: border-box;
+  line-height: 12px;
+  width: 100px;
+}
+
+button.active, button:hover {
+  background-color: var(--main-blue);
+}
+
+button.medium {
+  width: 120px;
+}
+
+button.large {
+  width: 187px;
+}

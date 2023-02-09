@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap');
 @import url('./vars.css');
+@import url('./icones.css');
+@import url('./buttons.css');
+@import url('./navbar.css');
+
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     background: var(--main-light-gray);
+    font-size:16px;
 }
 
 h1 {
     font-family: 'Inter', sans-serif;
+    /* background: rgb(var(--main-white), 80%); */
 }
 
 li a {
@@ -21,6 +28,11 @@ li a {
 
 li {
     list-style: none;
+}
+
+header#home {
+    height: 1080px;
+    margin-top: 100px;
 }
 
 
@@ -68,27 +80,6 @@ footer a p {
     }
 }
 
-
-
-/* //**************************************** ANIMATION HEADER */
-
-@keyframes iteration {
-    from {
-        left: 0;
-        background-color: rgb(243, 237, 237);
-        box-shadow: 10px 10px 100px 200px rgb(243, 237, 237);
-    }
-
-    to {
-        left: 1200px;
-        background-color: rgb(251, 251, 246);
-        box-shadow: 10px 10px 100px 200px rgb(243, 237, 237);
-    }
-
-
-}
-
-
 #result {
     display: flex;
     justify-content: space-between;
@@ -96,22 +87,35 @@ footer a p {
     height: 500px;
     border: 1px dashed #ccc;
     background-color: rgba(7, 23, 117, 0.2);
+    overflow:hidden;
 }
 
 /* Boite à animer */
 #animated_box {
     width: 100px;
     height: 100px;
-    background-color: white;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
     /* obligatoires pour pouvoir bouger la div : */
     position: absolute;
     left: 0px;
     top: 150px;
     /* Ajoutez les options d'animation de la div ici */
-    animation-name: iteration;
-    animation-duration: 20s;
-    /* animation-iteration-count:infinite;  */
-    animation-iteration-count: 4;
-    animation-direction: normal;
-    border-radius: 50%
+    animation: iteration 4s ease-in-out 1s infinite alternate;
+}
+/* //**************************************** ANIMATION HEADER */
+
+@keyframes iteration {
+    from {
+        left: 0%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 10px 10px 200px 200px rgba(243, 237, 237, 1);
+    }
+
+    to {
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 10px 10px 200px 200px rgba(243, 237, 237, 1);
+    }
 }

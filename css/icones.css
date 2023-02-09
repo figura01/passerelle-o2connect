@@ -1,0 +1,7 @@
+.icone-compte {
+  fill: var(--main-black)
+}
+
+.icone-compte.active {
+  fill: var(--main-blue)
+}
