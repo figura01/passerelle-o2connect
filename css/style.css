@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@keyframes iteration {
+    from {
+        left: 0;
+        background-color: rgb(243, 237, 237);
+        box-shadow: 10px 10px 100px 200px rgb(243, 237, 237);
+    }
+
+    to {
+        left: 1200px;
+        background-color: rgb(251, 251, 246);
+        box-shadow: 10px 10px 100px 200px rgb(243, 237, 237);
+    }
+
+
+}
+
+
+#result {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 500px;
+    border: 1px dashed #ccc;
+    background-color: rgba(7, 23, 117, 0.2);
+}
+
+/* Boite à animer */
+#animated_box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    /* obligatoires pour pouvoir bouger la div : */
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    /* Ajoutez les options d'animation de la div ici */
+    animation-name: iteration;
+    animation-duration: 20s;
+    /* animation-iteration-count:infinite;  */
+    animation-iteration-count: 4;
+    animation-direction: normal;
+    border-radius: 50%
+}
