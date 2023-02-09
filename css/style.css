@@ -23,6 +23,19 @@ li {
     list-style: none;
 }
 
+#respirer {
+    background-image: url(../images/KV-O2connect-fd-sombre.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#respirer p {}
+
+#detecter {
+    background-image: url(../images/KV-O2connect-fd-vert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 footer a p {
     color: #000;
