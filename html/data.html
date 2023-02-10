@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/data.css">
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -20,66 +21,142 @@
       crossorigin="anonymous">
   </head>
   <body>
-    <header id="home">
-      <nav class="navbar navbar-expand-lg container mt-5">
-        <div><img src="./../images/logo.png" alt="logo"></div>
+    <header>
+      <div class="container">
+          <nav class="navbar navbar-expand-lg d-flex justify-content-between fixed-top px-5">
+              <a class="navbar-brand" href="../index.html">
+                  <div><img src="../images/logo.png" alt="logo"></div>
+              </a>
+              
+              <button class="navbar-toggler" type="button" id="text-white"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end"
+                  id="navbarNavAltMarkup">
+                  <div class="navbar-nav align-items-center">
+                      <a class="nav-link active text-dark"
+                          aria-current="page"
+                          href="index.html">Accueil</a>
+                      <a class="nav-link text-dark"
+                          href="html/produit.html">O2
+                          connect</a>
+                      <a class="nav-link text-dark" href="html/data.html">
+                          Vos données</a>
+                      <form class="d-flex" role="search">
+                          <input class="form-control me-2 rounded-start-pill rounded-end-pill" type="search" placeholder="Rechercher" aria-label="Search">
+                      </form>
 
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" id="text-white"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active text-dark"
-                aria-current="page"
-                href="../index.html">Home</a>
-              <a class="nav-link text-dark" href="produit.html">O2
-                connect</a>
-              <a class="nav-link text-dark" href="data.html">O2
-                data</a>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search"
-                  placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark"
-                  type="submit">Search</button>
-              </form>
+                      <a class="nav-link text-dark" href="#">
+                          <svg class="icone-compte" width="43" height="44" viewBox="0 0 43 44" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21.667 21.6875C19.8337 21.6875 18.313 21.0835 17.105 19.8755C15.8963 18.6668 15.292 17.1458 15.292 15.3125C15.292 13.4792 15.8963 11.9585 17.105 10.7505C18.313 9.54183 19.8337 8.9375 21.667 8.9375C23.5003 8.9375 25.021 9.54183 26.229 10.7505C27.4377 11.9585 28.042 13.4792 28.042 15.3125C28.042 17.1458 27.4377 18.6668 26.229 19.8755C25.021 21.0835 23.5003 21.6875 21.667 21.6875ZM8.33398 35.0625V30.8965C8.33398 29.8685 8.59065 28.9725 9.10398 28.2085C9.61798 27.4445 10.2917 26.8682 11.125 26.4795C12.931 25.6462 14.702 25.0142 16.438 24.5835C18.174 24.1528 19.917 23.9375 21.667 23.9375C23.417 23.9375 25.153 24.1528 26.875 24.5835C28.5977 25.0142 30.3757 25.6462 32.209 26.4795C33.0423 26.8962 33.7157 27.4795 34.229 28.2295C34.743 28.9795 35 29.8685 35 30.8965V35.0625H8.33398ZM11.125 32.2715H32.209V30.8965C32.209 30.5072 32.0977 30.1322 31.875 29.7715C31.653 29.4102 31.3753 29.1462 31.042 28.9795C29.3473 28.1462 27.757 27.5628 26.271 27.2295C24.785 26.8962 23.2503 26.7295 21.667 26.7295C20.0837 26.7295 18.542 26.8962 17.042 27.2295C15.542 27.5628 13.9587 28.1462 12.292 28.9795C11.9307 29.1462 11.646 29.4102 11.438 29.7715C11.2293 30.1322 11.125 30.5072 11.125 30.8965V32.2715ZM21.667 18.9375C22.695 18.9375 23.556 18.5905 24.25 17.8965C24.9447 17.2018 25.292 16.3405 25.292 15.3125C25.292 14.2852 24.9447 13.4242 24.25 12.7295C23.556 12.0348 22.695 11.6875 21.667 11.6875C20.639 11.6875 19.778 12.0348 19.084 12.7295C18.3893 13.4242 18.042 14.2852 18.042 15.3125C18.042 16.3405 18.3893 17.2018 19.084 17.8965C19.778 18.5905 20.639 18.9375 21.667 18.9375Z"/>
+                          </svg> 
+                      </a>
+                  </div>
+              </div>
+              
+          </nav>
+      </div>
+    </header>
+    <main id="data">
+      <section>
+        <div class="container">
+          <div class="row g-2 g-lg-3">
+            <div class="col-md-6 order-md-1">
+              <article class="box text-center h-full my-0">
+                <h2 class="title">Polluants dans l'air</h2>
+                <section>
+                  <div>graphe 1</div>
+                </section>
+                <section>
+                  <div>graphe 2</div>
+                </section>
+                <section>
+                  <div>Action connect</div>
+                </section>
+              </article>
+            </div>
 
-              <a class="nav-link text-dark" href="#">Compte</a>
+            <div class="col-md-6 order-md-2">
+              <div class="row">
+                <div class="col-md-12">
+                  <article class="box blue text-center mt-0">
+                      <h2 class="title">Mardi 28 février 2023</h2>
+                      <section>
+                        <div>Humidité: 30%</div>
+                      </section>
+                      <section>
+                        <div>icones humidite</div>
+                      </section>
+                  </article>
+                </div>
+                <div class="col-md-12">
+                  <article class="box text-center mb-0">
+                    <h2 class="title">Polluant liés au tbac</h2>
+                      <section>
+                        <div>Graph 1</div>
+                      </section>
+                      <section>
+                        <div>Action connecte</div>
+                      </section>
+                  </article>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="row g-2 g-lg-3">
+            <div class="col-md-6">
+              <div class="row g-2 g-lg-3">
+                <div class="col-12">
+                  <article class="box blue">
+                    <h2>Moyenne hebdomadaire</h2>
+                    <div>graph hebdo 3 courbes</div>
+                  </article>
+                </div>
+
+                <div class="col-12">
+                  <article class="box">
+                    <h2>Alerte gaz</h2>
+                    <div>graph hebdo 3 courbes</div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <article class="box blue text-center">
+                <div class="section mb-4">
+                  <h2 class="title">Moyenne mensuelle</h2>
+                  <div>graph mensuelle</div>
+                </div>
+
+                <div class="section">
+                  <h2 class="title">Moyenne annuelle</h2>
+                  <div>graph annuelle</div>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ducimus id veritatis distinctio vel aliquam consequatur ipsa rem impedit optio.</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-      </nav>
 
-      <div id="header_bottom">
-        <h1 class="text-uppercase text-center">Page Data</h1>
-      </div>
-    </header>
-    <main>
-      Bloc main
+        
+      </section>
     </main>
-    <footer>
 
+    <footer>
       <div class="container pt-5">
         <div class="footer-direction">
-
           <div class="col-3">
-
-
-
             <div class="mt-5 d-block text-center">
               <div>
                 <img src="./../images/logo.png" class="w-50 mb-5"
                   alt="logo">
               </div>
               <ul class="d-flex justify-content-center">
-
-
                 <li class="mx-2"><i class="fa-brands
                     fa-instagram"></i></li>
                 <li class="mx-2"><i class="fa-brands
@@ -87,14 +164,10 @@
                 <li class="mx-2"><i class="fa-brands
                     fa-facebook"></i></li>
               </ul>
-
             </div>
           </div>
 
           <div class="col-3">
-
-
-
             <div class="mt-5 me-5">
               <ul class="d-block">
                 <li class="">
@@ -103,14 +176,10 @@
                   <a href="#"><p>Flux social</p> </a></li>
                 <li class=""><a href="#"><p>Service client</p></a></li>
               </ul>
-
             </div>
           </div>
 
           <div class="col-3">
-
-
-
             <div class="mt-5 me-5">
               <ul class="d-block">
                 <li class="">
@@ -123,14 +192,10 @@
                 <li class=""><a href="#"><p>Mentions
                       Légales</p></a></li>
               </ul>
-
             </div>
           </div>
 
           <div class="col-3">
-
-
-
             <div class="mt-5 me-5">
               <ul class="">
                 <li class="">
@@ -140,15 +205,9 @@
                 <li class=""><a href="#">
                     <p>Contactez-nous</p>
                   </a></li>
-
               </ul>
-
             </div>
           </div>
-
-
-
-
         </div>
         <hr class="mt-5">
         <p class="text-center foot_bottom">

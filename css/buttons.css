@@ -1,4 +1,4 @@
-button {
+.button {
   text-transform: uppercase;
   text-align: center;
   font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -14,14 +14,14 @@ button {
   width: 100px;
 }
 
-button.active, button:hover {
+.button.active, button:hover {
   background-color: var(--main-blue);
 }
 
-button.medium {
+.button.medium {
   width: 120px;
 }
 
-button.large {
+.button.large {
   width: 187px;
 }
