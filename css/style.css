@@ -6,25 +6,33 @@
 @import url('./home.css');
 @import url('./produit.css');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Inter', sans-serif;
     background: var(--main-light-gray);
     font-size: 16px;
 }
 
-main {
-    margin-top: 100px;
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
     font-family: 'Inter', sans-serif;
+    font-size: 100px;
     /* background: rgb(var(--main-white), 80%); */
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
 }
 
 li a {
@@ -35,11 +43,19 @@ li {
     list-style: none;
 }
 
-
+.text-weight-700 {
+    font-weight: 700;
+}
 
 
 footer a p {
     color: #000;
+}
+
+.foot_bottom {
+    font-weight: 100;
+    color: rgb(17, 1, 1);
+    font-size: .875rem;
 }
 
 /* //********************************************MEDIA QUERIES */

@@ -1,48 +1,44 @@
-header#home {
+@import url('./vars.css');
+#home {
     height: 1080px;
     margin-top: 100px;
     position: relative;
-}
-
-#titre {
-    font-size: 7rem;
-}
-
-#respirer {
-    background-image: url('../images/KV-O2connect-fd-sombre.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
-    max-height: 1080px;
-
-}
-
-#respirer .bg_text_white,
-#header_bottom .bg_text_white {
-    background: rgba(255, 254, 254, .8);
     background-size: cover;
+    background-position: center;
+    background-image: url('../images/KV-O2connect_clair.png');
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 60px;
 }
 
-#detecter {
-    background-image: url('../images/KV-O2connect-fd-vert.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-height: 1080px;
-
+#home h1 {
+    height: 88px;
+    width: auto;
+    margin-bottom: 40px;
 }
 
-#detecter .bg_text_white {
-    background: rgba(255, 254, 254, .8);
-    background-size: cover;
+#home p.bg-white-80 {
+    background-color: rgba(255, 254, 254, .4);
+    padding-left: 25%;
+    padding-right: 25%;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 95px; 
+    margin-bottom: 0;
 }
-
-header {
-    background-image: url('../images/KV-O2connect clair.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-height: 1080px;
+h3.bg-white-80 {
+    background-color: rgba(255, 254, 254, .4);
+    padding-left: 25%;
+    padding-right: 25%;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 95px; 
+    margin-bottom: 0;
 }
-
-* //**************************************** ANIMATION HEADER ******************************/
 
 #result {
     position: absolute;
@@ -52,6 +48,38 @@ header {
     height: 100%;
     overflow: hidden;
 }
+
+#titre {
+    font-size: 7rem;
+}
+
+#detecter {
+    background-image: url('../images/KV-O2connect-vert.png');
+}
+#detecter h2 {
+    padding-top: 140px;
+}
+
+#respirer {
+    background-image: url('../images/KV-O2connect-sombre.png');
+}
+
+#respirer h2{
+    color: white;
+    padding-top: 6.25rem;
+}
+
+.section {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1080px;
+    margin: 10px 0;
+}
+* //**************************************** ANIMATION HEADER ******************************/
+
+
 
 /* Boite à animer */
 #animated_box {

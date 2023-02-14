@@ -43,9 +43,9 @@
                 aria-current="page"
                 href="../index.html">Accueil</a>
               <a class="nav-link text-dark"
-                href="html/produit.html">O2
+                href="./produit.html">O2
                 connect</a>
-              <a class="nav-link text-dark" href="html/data.html">
+              <a class="nav-link text-dark" href="./data.html">
                 Vos données</a>
               <form class="d-flex" role="search">
                 <input class="form-control me-2 rounded-start-pill
@@ -101,7 +101,9 @@
                 <article class="box text-center h-full my-0">
                   <h2 class="title">Polluants dans l'air</h2>
                   <section>
-                    <div>graphe 1</div>
+                    <div id="content__graphC02">
+                      <canvas id="graphC02" width="200" height="100"></canvas>
+                    </div>
                   </section>
                   <section>
                     <div>graphe 2</div>
@@ -162,12 +164,13 @@
                 <article class="box blue text-center">
                   <div class="section mb-4">
                     <h2 class="title">Moyenne mensuelle</h2>
-                    <div>graph mensuelle</div>
+                    <div><canvas id="graphMensuel" width="300" height="200" aria-label="graphiqye mensuelle" role="img"></canvas></div>
                   </div>
 
                   <div class="section">
                     <h2 class="title">Moyenne annuelle</h2>
-                    <div>graph annuelle</div>
+                    <div><canvas id="graphAnnuelle" width="300" height="200" aria-label="graphiqye mensuelle" role="img"></canvas></div>
+
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Amet ducimus id veritatis distinctio vel aliquam
                       consequatur ipsa rem impedit optio.</p>
@@ -243,7 +246,7 @@
               </div>
             </div>
           </div>
-          <hr class="mt-5">
+
           <p class="text-center foot_bottom">
             2023 © O2 connect - by projet-e Team
           </p>
@@ -255,6 +258,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous">
     </script>
-      <script src="../js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.umd.js"></script>
+      <script src="../js/data.js" module></script>
     </body>
   </html>
